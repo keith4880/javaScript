@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html lang="en">
+    <head>
+        <title>JavaScript Array</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <h1>Arrays</h1>
+        
+        <p id="array"></p>
+        
+         <script>
+            var people = ["Keith" , "John" , "Jane" , "Joe"];
+            document.getElementById("array").innerHTML = people;
+            
+        </script>
+        
+        <h1>Specific Element using numbers</h1>
+        <p>The 3rd person in the array is called.</p>
+        <p id="name"></p>
+        <script>
+            var order = ["Keith" , "John" , "Jane" , "Joe"];
+            document.getElementById("name").innerHTML = people[2];
+            
+        </script>
+       
+    </body>
+</html>

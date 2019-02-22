@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>JavaScript Loop Example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <h1>Loops</h1>
+        
+        <p id="loops"></p>
+        <script>
+            var text = "";
+            var i;
+            for (i = 0; i < 10; i++){ 
+                text += "The number is" + i + "<br>";
+            }
+            document.getElementById("loops").innerHTML = text; 
+            
+        </script>
+    </body>
+</html>
+/*This "for" loop is set so i starts at 0 and will continue to add 1 to it so long as
+i is less than 10. i++ is the designation telling it to add 1.
+*/

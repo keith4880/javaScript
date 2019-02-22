@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>JavaScript Conditional Statements Example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <h1>Conditional Statement</h1>
+        <button onclick="myFunction()">PUSH ME</button>
+        <p id="condStatement"></p>
+        <h1>Math Function</h1>
+        <p id="condStatement2">Math Function</p>
+
+       
+        <script>
+            //myFunction is the function object, myFunction() is the function result
+            function myFunction() {
+            //variable is st to information
+                var information;
+            //variable time will get date and hours from PC
+                var time = new Date().getHours();
+            //if else if else statements with conditions
+                if (time < 9) {
+                    information = "I am presenting for my meeting";
+                } else if (time < 7) {
+                    information = "Not time for my meeting";
+                } else {
+                    information = "I am lost in time";
+                }
+                document.getElementById("condStatement").innerHTML = information;
+            }
+            function myFunction2(x) {
+                
+                return (100/10) * (x-2);
+            }
+                document.getElementById("condStatement2").innerHTML = myFunction2(8);
+                
+                  
+            
+        </script>    
+    </body>
+</html>
+

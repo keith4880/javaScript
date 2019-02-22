@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>JavaScript Parameter Example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <h1>Parameters</h1>
+        <p>This has a default value for this function parameter.</p>
+        <p>In this function only a has a value which leaves b undefined.</p>
+        <p>function testFunction(a, b) {
+                <br>if (b === undefined) {
+                    <br>b = 0;
+                    <br>}
+                <br>return a * b;
+                <br>}</p>
+        <h2>Result</h2>
+        <p id="parameter"></p>
+        <script>
+            function testFunction(a, b) {
+                if (b === undefined) {
+                    b = 0;
+                }
+                return a * b;
+            }
+            document.getElementById("parameter").innerHTML = testFunction(6);
+        </script>
+    </body>
+</html>

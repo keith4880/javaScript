@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Associative Array</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <h1>Associative Array</h1>
+        
+        <p>This will get the person defined in [] and the length of that person's name.</p>
+        
+        <p id="associative"></p>
+        <script>
+            var person = [];
+            person[0] = "Keith";
+            person[1] = "Jim";
+            person[2] = "Jessica";
+            person[3] = "Katarina";
+            person[4] = "Lilly";
+            person[5] = "Jennifer";
+            document.getElementById("associative").innerHTML = 
+                    person[1] + " " + person[1].length;
+            
+        </script>
+    </body>
+</html>

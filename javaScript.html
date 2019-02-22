@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang='en'>
+    <head>
+        <title>JavaScript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+    </head>
+    <body>
+        <h1>Arrays</h1>
+        
+        <p id="array"></p>
+        
+         <script>
+            var people = ["Keith" , "John" , "Jane" , "Joe"];
+            document.getElementById("array").innerHTML = people;
+            
+        </script>
+        
+        <h1>Specific Element using numbers</h1>
+        <p>The 3rd person in the array is called.</p>
+        <p id="name"></p>
+        <script>
+            var order = ["Keith" , "John" , "Jane" , "Joe"];
+            document.getElementById("name").innerHTML = people[2];
+            
+        </script>
+        
+        <h1>Associative Array</h1>
+        
+        <p>This will get the person defined in [] and the length of that person's name.</p>
+        
+        <p id="associative"></p>
+        <script>
+            var person = [];
+            person[0] = "Keith";
+            person[1] = "Jim";
+            person[2] = "Jessica";
+            person[3] = "Katarina";
+            person[4] = "Lilly";
+            person[5] = "Jennifer";
+            document.getElementById("associative").innerHTML = 
+                    person[1] + " " + person[1].length;
+            
+        </script>
+        
+        <h1>Conditional Statement</h1>
+        <button onclick="myFunction()">PUSH ME</button>
+        <p id="condStatement"></p>
+        <h1>Math Function</h1>
+        <p id="condStatement2">Math Function</p>
+
+       
+        <script>
+            //myFunction is the function object, myFunction() is the function result
+            function myFunction() {
+            //variable is st to information
+                var information;
+            //variable time will get date and hours from PC
+                var time = new Date().getHours();
+            //if else if else statements with conditions
+                if (time < 9) {
+                    information = "I am presenting for my meeting";
+                } else if (time < 7) {
+                    information = "Not time for my meeting";
+                } else {
+                    information = "I am lost in time";
+                }
+                document.getElementById("condStatement").innerHTML = information;
+            }
+            function myFunction2(x) {
+                
+                return (100/10) * (x-2);
+            }
+                document.getElementById("condStatement2").innerHTML = myFunction2(8);
+                
+                  
+            
+        </script>    
+        
+         <h1>Loops</h1>
+        
+        <p id="loops"></p>
+        <script>
+            var text = "";
+            var i;
+            for (i = 0; i < 10; i++){ 
+                text += "The number is" + i + "<br>";
+            }
+            document.getElementById("loops").innerHTML = text; 
+            
+        </script>
+        
+        <h1>Parameters</h1>
+        <p>This has a default value for this function parameter.</p>
+        <p>In this function only a has a value which leaves b undefined.</p>
+        <p>function testFunction(a, b) {
+                <br>if (b === undefined) {
+                    <br>b = 0;
+                    <br>}
+                <br>return a * b;
+                <br>}</p>
+        <h2>Result</h2>
+        <p id="parameter"></p>
+        <script>
+            function testFunction(a, b) {
+                if (b === undefined) {
+                    b = 0;
+                }
+                return a * b;
+            }
+            document.getElementById("parameter").innerHTML = testFunction(6);
+        </script>
+        
+         <h1>JavaScript Variables</h1>
+
+        <p id="variable"></p>
+        
+        <script>
+            //Variables are people, place, thing. 
+            var people = "Keith", place = "Idaho", thing= "computer";
+         
+                    
+            //Displays the variable people, on webpage will display Keith
+            document.getElementById("variable").innerHTML = people; 
+        </script>
+    </body>
+</html>
